@@ -1,5 +1,5 @@
 ---
-- name: Update the repository cache and update package "freecad" to latest version using default release
+- name: Update the repository cache and update package freecad to latest version using default release
   ansible.builtin.apt:
     name: freecad
     state: latest
