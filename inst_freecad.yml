@@ -1,8 +1,10 @@
 ---
-- name: Update the repository cache and update package freecad to latest version using default release
-  ansible.builtin.apt:
-    name: freecad
-    state: latest
+- hosts: localhost
+  tasks
+    - name: Update the repository cache and update package freecad to latest version using default release
+      ansible.builtin.apt:
+        name: freecad
+        state: latest
 #    default_release: squeeze-backports
-    update_cache: yes
+        update_cache: yes
 
