@@ -1,7 +1,7 @@
 ---
 - hosts: localhost
   become: true
-  become_method: enable
+#  become_method: enable
   tasks:
     - name: Update the repository cache and update package freecad to latest version using default release
       ansible.builtin.apt:
