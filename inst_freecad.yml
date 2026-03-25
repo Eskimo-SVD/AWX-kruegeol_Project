@@ -1,5 +1,7 @@
 ---
-- hosts: f-pc5844-debian13.fritz.box
+- hosts:
+   - f-pc5844-debian13.fritz.box
+   - ver-kruegeol.germany.focke.de
   become: true
 #  become_method: enable
   tasks:
