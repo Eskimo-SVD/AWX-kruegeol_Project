@@ -1,5 +1,5 @@
 ---
-- hosts: localhost
+- hosts: f-pc5844-debian13.fritz.box
   become: true
 #  become_method: enable
   tasks:
