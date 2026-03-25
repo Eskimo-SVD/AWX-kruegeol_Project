@@ -1,0 +1,16 @@
+---
+- hosts:
+   - f-pc5844-debian13.fritz.box
+   - ver-kruegeol007.germany.focke.de
+   - F-PC5844-pop-os.fritz.box
+  become: true
+#  become_method: enable
+  tasks:
+    - name: Update the repository cache and update package ansible-lint to latest version using default release
+      ansible.builtin.apt:
+        name: ansible-lint
+        state: latest
+#    default_release: squeeze-backports
+        update_cache: yes
+
+ 
